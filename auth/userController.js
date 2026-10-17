@@ -39,7 +39,7 @@ class AuthController {
 
     async getProfile(req, res) {
         try {
-            const token = req.headers.autorization?.split(' ')[1]
+            const token = req.headers.authorization?.split(' ')[1]
             const profile = await UserServices.getProfile(token)
             return res.json(profile) 
         } catch (e) {
