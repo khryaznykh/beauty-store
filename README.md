@@ -124,16 +124,17 @@ The following table documents the core API routes and review routes developed or
 
 | Method | Endpoint | Description |
 |---|---|---|
-| POST | `/login` | Authenticate a user |
+| POST | `/signin` | Authenticate a user |
+| POST | `/signup` | Register a user |
 | GET | `/profile` | Retrieve authenticated user profile |
 | GET | `/products` | Retrieve products |
 | GET | `/products/:id` | Retrieve a product by ID |
 | POST | `/products` | Create a product |
 | PUT | `/products/:id` | Update a product |
-| POST | `/products/:id/review` | Submit a product review |
-| GET | `/account/myreviews` | Retrieve the current user's reviews |
-| PATCH | `/account/myreviews/:id` | Update a user's review |
-| DELETE | `/account/myreviews/:id` | Delete a user's review |
+| POST | `/products/:id/reviews` | Submit a product review |
+| GET | `/account/my-reviews` | Retrieve the current user's reviews |
+| PATCH | `/account/my-reviews/:id` | Update a user's review |
+| DELETE | `/account/my-reviews/:id` | Delete a user's review |
 
 Authentication is required for protected account and review operations.
 
